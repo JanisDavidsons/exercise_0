@@ -7,7 +7,7 @@ and one class.
 ![git demo](gif/git.gif)
 
     Then open terminal within a folder, were you want to download file.
-Enter command "git clone https://github.com/JanisDavidsons/exercise_0.git"
+Enter command "git clone" and paste adress you copied above in terminal.
 
 ![git demo](gif/terminal.gif)
 
