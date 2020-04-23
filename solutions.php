@@ -1,7 +1,5 @@
 <?php
 
-echo findOddEvenPair([3, 2, 5, 7, 5, 9, 12, 14]) . PHP_EOL;
-
 function findOddEvenPair(array $numbers): int
 {
     $validParityIndex = 0;
@@ -34,9 +32,6 @@ class SummationService
     }
 }
 
-$service = new SummationService([-1, 0, 2, 7, -15]);
-echo $service->sum(2, 4) . PHP_EOL;
-
 function longestSubstr(string $text): string
 {
     $chars = str_split($text);
@@ -49,4 +44,10 @@ function longestSubstr(string $text): string
     }
     return implode('',$result);
 }
-echo longestSubstr('aZAzaz');
+
+echo 'First odd even pair from numbers [3, 2, 5, 7, 5, 9, 12, 14] are at index: '.findOddEvenPair([4, 2, 6, 7, 5, 9, 12, 14]) . PHP_EOL.PHP_EOL;
+
+$service = new SummationService([-1, 0, 2, 7, -15]);
+echo 'Sum from index 2 to index 4 from array [-1, 0, 2, 7, -15] are: '.$service->sum(2, 4) . PHP_EOL.PHP_EOL;
+
+echo 'Longest substring from character \'aZAzaz\' are: '.longestSubstr('aZAzaz') . PHP_EOL.PHP_EOL;
